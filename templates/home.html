@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <!--
+  https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcmVlcnxlbnwwfHwwfHx8MA%3D%3D
+  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+       rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+       crossorigin="anonymous"
+    />
+    <link
+       rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+       crossorigin="anonymous"
+    />
+    <title>Ibrahim Hassan</title>
+    <style>
+      .w-15{
+        min-width:15% !important;
+        max-width:15% !important;
+        width:15% !important;
+      }
+      #bannar{
+        height:480px;
+        object-fit:cover;
+        width:100%;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-center  mt-5  p-0 pt-5 bg-secondary  ps-0 pe-0 ms-0 me-0 w-100">IBRAHIM HASSAN</h1>
+    <img  src="static/bannar.jpg" id="bannar" alt="bannar" border="0" class="img-fluid">
+    <div class="container bg-dark text-white">
+      {% include 'nav.html' %}
+     
+        <h2 class="text-center mt-5 mb-2 pb-1 pt-1 text-secondary">About Me</h2>
+      <hr class="mt-2 mb-1 bg-secondary"/>
+      <div class="row justify-content-between align-items-center border-bottom border-secondary  ">
+        <div class="col-md-6">
+          <p class="lead text-justify mt-1 mb-1">
+             All you have to do is paste your text into the text box at the top, scroll to find the style of text that you like, and click “Copy.” Then you can post the fancy font on your favorite social media platforms, such as Facebook, Twitter, or Instagram, or even text messages. Easily copy and paste fancy, elegant fonts.
+            All you have to do is paste your text into the text box at the top, scroll to find the style of text that you like, and click “Copy.” Then you can post the fancy font on your favorite social media platforms, such as Facebook, Twitter, or Instagram, or even text messages. Easily copy and paste fancy, elegant fonts.
+             Using our text generator to create fancy text is really easy. All you have to do is paste your text into the text box at the top, scroll to find the style of text that you like, and click “Copy.” Then you can post the fancy font on your favorite social media platforms, such as Facebook, Twitter, or Instagram, or even text messages. Easily copy and paste fancy, elegant fonts.
+          </p>
+        </div>
+         <div class="d-none d-md-block col-md-6">
+           <img src="/static/people.jpg" alt="people" style="height:460px"  class="img-fluid"/>
+         </div>
+      </div>
+        
+       
+        <h2 class="text-center mt-5 mb-0 pt-3 pb-0 text-secondary">Open Positions</h2>
+        <div class="mb-4 mt-5 pt-2 pb-2">
+         {% for job in jobs %}
+           {% include 'jobitems.html' %}
+         {% endfor %}
+        </div>
+        <div class="text-center">
+          <button class="btn btn-outline-primary btn-lg">Contact Us</button>
+        </div>
+      {% include 'footer.html' %}
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
